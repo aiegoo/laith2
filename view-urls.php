@@ -1,0 +1,83 @@
+<?php
+    // include memcached class and connect to memcached server
+    require('memcached.php');
+
+    // include the database connection
+    require('dbconnect.php');
+
+    // check if there is generatedURL cache exits
+    $rows = $memcache->get('generatedURL');
+
+    // check if the cache is not empty
+    if((is_array($rows)  && count($rows) == 0) || $rows == null || $rows == ''){
+      // fetch records from the showyoutube table
+      $stmt = $pdo->query('SELECT * FROM youtubeurl ORDER BY id DESC');
+      $rows = $stmt->fetchAll();
+      $rowCounts =  $stmt->rowCount();
+      // store the fetched rows into the cache for next time
+      $memcache->set('generatedURL', $rows, false, 1800);
+    }else{
+        $rowCounts = count($rows);
+    }
+?>
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Videos List
+                        </div>
+                        <div class="card-body">
+                            <?php if($rowCounts > 0){ ?>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">URL</th>
+                                        <th scope="col">Youtube ID</th>
+                                        <th scope="col">Published At</th>
+                                        <th scope="col">Channel ID</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach($rows as $key => $row) {?>
+                                    <tr>
+                                        <th scope="row"><?php echo $row['id']?></th>
+                                        <td><a href="http://159.65.8.38/laith/view-video.php?id=<?php echo $row["url_key"];?>" target="_blank">View video details</td>
+                                        <td><?php echo $row["youtube_id"];?></td>
+                                        <td><?php echo $row["published_at"];?></td>
+                                        <td><?php echo $row["channel_id"];?></td>
+                                    </tr>
+                                    <?php }?>
+                                </tbody>
+                            </table>
+                            <?php }else{ ?>
+                        <div class="text-center">NO RESULTS FOUND</div>
+                        <?php }?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                   <a href="index.php" class="btn btn-primary d-block" >Fetch New Video Details</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></$
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></sc$
+    </body>
+</html>
+
+
+
+
+

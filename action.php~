@@ -1,0 +1,64 @@
+<?php
+    // invlude memcached class and connect to memcached server
+    require('memcached.php');
+
+    // include the database connection
+    require('dbconnect.php');
+
+    // define variables and set to empty values
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if($_POST["url"] != "" && $_POST["apiKey"] != "" && $_POST['youtubeId']){
+            // check if the video was already fetched before
+            $getYoutubeByVideoId = $pdo->query("SELECT * FROM youtubeurl where youtube_id = '".$youtubeId."'");
+            $rows = $getYoutubeByVideoId->fetchAll();
+            if(count($rows) > 0){
+                echo 'success';
+            }else{
+                $videoUrl = $_POST["url"];
+                $key = $_POST["apiKey"];
+                $youtubeId = $_POST['youtubeId'];
+                $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=$youtubeId&key=$key";
+                $cURLConnection = curl_init();
+    
+                curl_setopt($cURLConnection, CURLOPT_URL, $url);
+                curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
+    
+                $youtubeUrlDetails = curl_exec($cURLConnection);
+                curl_close($cURLConnection);
+    
+                $jsonArrayResponse = json_decode($youtubeUrlDetails,true);
+    
+                $newRecord = $pdo->prepare("INSERT INTO youtubeurl (url,url_key,youtube_id,serve,published_at,channel_id,title,channel_title,category_id,default_language) VALUES (?,?,?,?,?,?,?,?,?,?)");
+                $insertedRecord = $newRecord->execute([
+                    $videoUrl,
+                    $key,
+                    $youtubeId,
+                    date('Y-m-d H:i:s'),
+                    $jsonArrayResponse['items'][0]['snippet']['publishedAt'],
+                    $jsonArrayResponse['items'][0]['snippet']['channelId'],
+                    $jsonArrayResponse['items'][0]['snippet']['title'],
+                    $jsonArrayResponse['items'][0]['snippet']['channelTitle'],
+                    $jsonArrayResponse['items'][0]['snippet']['categoryId'],
+                    $jsonArrayResponse['items'][0]['snippet']['defaultLanguage'],
+                ]);
+    
+               if ($insertedRecord) {
+                    // clear generatedUrl cache if exist
+                    $memcache->delete('generatedURL');
+    
+                    // fetch all records and cache them to save fetching from database each time user enter url listing page
+                    $stmt = $pdo->query('SELECT * FROM youtubeurl ORDER BY id DESC');
+                    $rows = $stmt->fetchAll();
+                    $memcache->set('generatedURL', $rows, false, 1800);
+    
+                    echo "success";
+                } else {
+                    echo "error";
+                }
+            }
+        }else{
+	        echo "error";
+        }
+    }
+?>
+
