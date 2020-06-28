@@ -1,0 +1,669 @@
+    1  exit
+    2  sudo passwd ajay
+    3  w
+    4  exit
+    5  ls
+    6  cd repos
+    7  ls
+    8  cd ajay
+    9  ls
+   10  cd ../mosa
+   11  ls
+   12  vim requirements.txt
+   13  ls
+   14  cd repos
+   15  ls
+   16  scp -r ~/repos/udemy/shellscript .
+   17  scp -r /home/root/repos/udemy .
+   18  pwd
+   19  su -
+   20  cd repos/udemy
+   21  cd shellscript
+   22  cd shellclass
+   23  ./demos/luser-demo06.sh
+   24  ./lab/luser06.sh
+   25  su -
+   26  cd repos/udemy
+   27  ls
+   28  cd shellscript
+   29  ls
+   30  cd shellclass
+   31  ls
+   32  ./demos/luser-demo06.sh
+   33  ./lab/luser06.sh
+   34  su -
+   35  w
+   36  exit
+   37  w
+   38  ls
+   39  cd /home/
+   40  ls
+   41  cd root
+   42  history
+   43  cd ~/repos
+   44  ls
+   45  cd udemy
+   46  ls
+   47  history
+   48  ls
+   49  mysql -u root -p
+   50  ls
+   51  cd repos
+   52  ls
+   53  cd
+   54  cd repos
+   55  ls
+   56  sudo apt-get install mysql-server
+   57  sudo apt-get instlal mysql-server
+   58  chmod +7
+   59  chmod
+   60  chmod --help
+   61  mysql -u root -p
+   62  mysqladmin -u root password root
+   63  sudo
+   64  sudo apt-get instlal mysql-server
+   65  mysql -u root -p
+   66  sudo apt-get install mysql-server
+   67  apt-get update
+   68  apt-get install mysql-server
+   69  mysql_secure_installation
+   70  mysql_install_db
+   71  h
+   72  history
+   73  ls
+   74  cd repos
+   75  ls
+   76  w
+   77  exit
+   78  bash -c "sleep 30: echo top secret"
+   79  bash -c "sleep 30; echo topsecret"
+   80  ps -ef | grep topsecret
+   81  vim ~/.tmuxinator
+   82  sudo -l
+   83  sudo apt update
+   84  apt-get update
+   85  sudo whami
+   86  exit
+   87  sudo whami
+   88  sudo whoami
+   89  history
+   90  exit
+   91  history
+   92  ls
+   93  cd repos/
+   94  ls
+   95  docker
+   96  ls
+   97  docker ps -a
+   98  sudo su
+   99  pwd
+  100  cd /var/www/html/
+  101  ls -l
+  102  php -v 
+  103  cd ..
+  104  php -v 
+  105  locate repos
+  106  cd /home/pawan/repos/
+  107  clear
+  108  ls -l
+  109  pwd
+  110  mkdir laith
+  111  sudo mkdir laith
+  112  mysql -v 
+  113  apache2 status
+  114  service apache2 status
+  115  php -v 
+  116  mkdir laith
+  117  sudo mkdir laith
+  118  exit
+  119  cd repos/mosa/
+  120  ls
+  121  docker images
+  122  sudo su
+  123  ls
+  124  cd repos
+  125  ls
+  126  cd ajay
+  127  ls
+  128  cd ../mosa
+  129  ls
+  130  vim readme.md
+  131  vim ~/.ssh/authorized_keys
+  132  cd .ssh
+  133  cd ~/.ssh
+  134  ls
+  135  cd ..
+  136  ls
+  137  ls -la
+  138  su - pawan
+  139  ls
+  140  cd /home/ajay
+  141  ls
+  142  ls -la
+  143  0;36;59M0;36;59mw
+  144  w
+  145  ls
+  146  cd repos
+  147  ls
+  148  cd mosa
+  149  ls
+  150  history
+  151  ls
+  152  vim Script.ipynb 
+  153  vim ~/.ssh/authorized_keys
+  154  cd /home/pawan/repos/
+  155  sudo mkdir laith
+  156  php -v 
+  157  sudo mkdir laith
+  158  cd laith
+  159  php -v 
+  160  clear
+  161  sudo apt install software-properties-common
+  162  sudo add-apt-repository ppa:ondrej/php
+  163  clear
+  164  sudo apt install php7.1 php7.1-common php7.1-opcache php7.1-mcrypt php7.1-cli php7.1-gd php7.1-curl php7.1-mysql
+  165  clear
+  166  php -v 
+  167  pwd
+  168  cd /var/www/html/
+  169  ls -l
+  170  clear
+  171  sudo mkdir laith
+  172  cd laith/
+  173  nano index.php
+  174  sudo nano index.php
+  175  sudo nano script1.php
+  176  sudo nano dbconnect.php
+  177  cd /var/log/apache2/
+  178  sudo cd /var/log/apache2/
+  179  sudo cd /var/log/apache2
+  180  sudo cd /var/log/apache2/
+  181  sudo cd /var/log/
+  182  cd /var/log/
+  183  ls -l
+  184  cd /var/log/apache2/error.log
+  185  sudo cd /var/log/apache2/error.log
+  186  sudo cat /var/log/apache2/error.log
+  187  mysql -u root -p
+  188  mysql -u id12433974_showyoutube  -p
+  189  lsb_release -a
+  190  clear
+  191  cd ..
+  192  cd /var/www/html/
+  193  cd laith/
+  194  sudo apt update
+  195  clear
+  196  sudo apt install memcached
+  197  clear
+  198  sudo apt install libmemcached-tools
+  199  sudo nano /etc/memcached.conf
+  200  sudo systemctl restart memcached
+  201  sudo netstat -plunt
+  202  sudo apt-get update
+  203  sudo apt-get install mysql-server
+  204  mysql --version
+  205  sudo mysql_secure_installation
+  206  sudo mysql
+  207  mysql -u ajay -p
+  208  pwd
+  209  ls -l
+  210  clear
+  211  ls -l
+  212  sudo nano dbconnect.php 
+  213  mysql -u ajay -p
+  214  clear
+  215  sudo nano dbconnect.php 
+  216  sudo nano script1.php
+  217  ls -l
+  218  rm index.php 
+  219  sudo rm index.php 
+  220  sudo nano index.php
+  221  sudo rm script1.php 
+  222  clear
+  223  ls -l
+  224  sudo nano index.php 
+  225  sudo nano memcached.php
+  226  sudo cat /var/log/apache2/error.log
+  227  memcached -d -m 512 -l 127.0.0.1 -p 11211 -u nobody
+  228  echo "stats settings" | nc localhost 11211
+  229  sudo cat /var/log/apache2/error.log
+  230  sudo apt-get install php5-memcached
+  231  sudo apt-get install php7.1-memcached
+  232  sudo service apache2  restart
+  233  sudo cat /var/log/apache2/error.log
+  234  sudo apt-get install php7.1-memcache
+  235  sudo service apache2  restart
+  236  sudo service apache2  status
+  237  clear
+  238  sudo nano memcached.php
+  239  pwd
+  240  sudo nano action.php
+  241  ls -l
+  242  cd /var/www/html/laith/
+  243  ls -l
+  244  cd /var/www/laithh
+  245  cd /var/www/laith
+  246  cd /var/www/html/laith
+  247  ls
+  248  vim index.php
+  249  clear
+  250  cd /var/www/html/laith/
+  251  ls -l
+  252  cd /var/www/html/laith/
+  253  ls -l
+  254  nano index.php 
+  255  sudo nano fetch-url.php
+  256  nano index.php 
+  257  sudo nano fetch-url.php
+  258  sudo cat /var/log/apache2/error.log
+  259  sudo nano fetch-url.php
+  260  sudo cat /var/log/apache2/error.log
+  261  sudo nano fetch-url.php
+  262  sudo nano action.php
+  263  sudo nano action.php 
+  264  sudo nano fetch-url.php
+  265  sudo nano action.php 
+  266  cd /var/www/html/laith/
+  267  sudo nano fetch-url.php 
+  268  sudo nano index.php 
+  269  sudo nano fetch-url.php 
+  270  ls -l
+  271  nano fetch-url.php 
+  272  vim fetch-url.php 
+  273  nano index.php 
+  274  sudo rm index.php 
+  275  sudo rm fetch-url.php 
+  276  clear
+  277  ls -l
+  278  sudo nano index.php
+  279  sudp nano view-urls.php
+  280  sudo nano view-urls.php
+  281  nano action.php 
+  282  sudo nano action.php 
+  283  ls -l
+  284  sudo nano index.php 
+  285  sudo nano action.php 
+  286  cat dbconnect.php 
+  287  mysql -u ajay -p
+  288  clear
+  289  sudo nano action.php 
+  290  sudo nano view-urls.php
+  291  sudo cat /var/log/apache2/error.log
+  292  sudo nano view-urls.php
+  293  mysql -u ajay -p
+  294  cat dbconnect.php 
+  295  mysql -u ajay -p
+  296  sudo nano view-urls.php
+  297  eixt
+  298  exit
+  299  cd /var/html
+  300  cd /var/www/html
+  301  ls
+  302  cd ..
+  303  sudo scp -r html /root/repos/zaith/.
+  304  exit
+  305  cd /var/www/html/laith/
+  306  ls -l
+  307  sudo v
+  308  sudo nano view-urls.php 
+  309  mysql -u ajay -p
+  310  sudo nano view-urls.php 
+  311  sudo nano index.php 
+  312  clear
+  313  cat memcached.php 
+  314  sudo nano view-urls.php 
+  315  sudo nano action.php 
+  316  sudo nano view-urls.php 
+  317  sudo cat /var/log/apache2/error.log
+  318  sudo nano view-urls.php 
+  319  sudo cat /var/log/apache2/error.log
+  320  sudo nano view-urls.php 
+  321  clear
+  322  sudo nano view-urls.php 
+  323  cat memcached.php 
+  324  sudo nano view-urls.php 
+  325  sudo cat /var/log/apache2/error.log
+  326  sudo nano view-urls.php 
+  327  sudo nano index.php 
+  328  pwd
+  329  mysql -u ajay -p
+  330  cat dbconnect.php 
+  331  mysql -u ajay -p
+  332  ls -l
+  333  sudo nano view-urls.php 
+  334  sudo nano index.php 
+  335  exit
+  336  cd epos
+  337  history
+  338  exit
+  339  cd /var/www
+  340  ls
+  341  cd html
+  342  ls
+  343  cd ..
+  344  git init
+  345  pwd
+  346  exit
+  347  cd /var/html
+  348  cd /var/www
+  349  ls
+  350  www.159.65.8.38
+  351  cd www.159.65.8.38
+  352  ls
+  353  git status
+  354  git remote 0v
+  355  git remote -v
+  356  vim config
+  357  pwd
+  358  git clone git-ssh://ajay@159.65.8.38/www/www.159.65.8.38
+  359  git clone git+ssh://ajay@159.65.8.38/www/www.159.65.8.38
+  360  git clone git+ssh://ajay@159.65.8.38/var/www/www.159.65.8.38
+  361  git clone git+ssh://ajay@159.65.8.38:www/www.159.65.8.38
+  362  cd ..
+  363  ls
+  364  pwd
+  365  scp -r ** ~/repos/youtube/zaith/.
+  366  scp -r ** /home/root/repos/youtube/zaith/.
+  367  scp -r ** /root/repos/youtube/zaith/.
+  368  scp -r ** root@159.65.8.38:~/repos/youtube/zaith/.
+  369  vim config
+  370  git remote -v
+  371  cd www.159.65.8.38
+  372  vim config
+  373  vim ~/.ssh/authorized_keys
+  374  vim /home/ajay/.ssh/authorized_keys
+  375  vim -r /home/ajay/.ssh/authorized_keys
+  376  ls
+  377  pwd
+  378  git config --global user.name
+  379  git init
+  380  cd ..
+  381  find /var/www/www.159.65.8.38 -type d -exec chmod 755 {} 
+  382  find /var/www/www.159.65.8.38 -type d -exec chmod 755 {} \;
+  383  clear
+  384  cd /var/www/html/laith/
+  385  ls -l
+  386  clear
+  387  nano index.php 
+  388  cat action.php 
+  389  sudo nano action.php 
+  390  sudo cat /var/log/apache2/error.log
+  391  composer require google/apiclient:~2.0
+  392  sudo apt install composer
+  393  clear
+  394  composer require google/apiclient:~2.0
+  395  cd ..
+  396  ls -l
+  397  sudo chmod -R 777 laith/
+  398  composer require google/apiclient:~2.0
+  399  $ sudo chown -R $USER ~/.composer/
+  400  sudo chown -R $USER ~/.composer/
+  401  composer require google/apiclient:~2.0
+  402  sudo chown -R user ~/.composer
+  403  sudo chown -R $USER ~/.composer
+  404  cd /home/ajay/
+  405  sudo chown -R $USER ~/.composer
+  406  owd
+  407  pwd
+  408  sudo apt update
+  409  clear
+  410  sudo apt install curl php-cli php-mbstring git unzip
+  411  php -v 
+  412  cd ~
+  413  curl -sS https://getcomposer.org/installer -o composer-setup.php
+  414  sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  415  cd /var/www/html/laith/
+  416  composer require google/apiclient:~2.0
+  417  sudo cat /var/log/apache2/error.log
+  418  sudo nano action.php 
+  419  sudo nano client_secret.json
+  420  sudo nano action.php 
+  421  sudo cat /var/log/apache2/error.log
+  422  sudo nano action.php 
+  423  mysql -u ajay -p
+  424  cat dbconnect.php 
+  425  mysql -u ajay -p
+  426  sudo nano action.php 
+  427  sudo nano index.php 
+  428  sudo nano action.php 
+  429  nano index.php 
+  430  sudo nano action.php 
+  431  cat dbconnect.php 
+  432  mysql -u ajay -p
+  433  sudo nano action.php 
+  434  nano dbconnect.php 
+  435  nano memcached.php 
+  436  sudo nano action.php 
+  437  mysql -u ajay -p
+  438  clear
+  439  ls -l
+  440  nano view-urls.php;
+  441  mysql -u ajay -p
+  442  nano view-urls.php;
+  443  sudo nano view-urls.php 
+  444  sudo nano action.php 
+  445  sudo cat /var/log/apache2/error.log
+  446  sudo nano action.php 
+  447  nano view-urls.php 
+  448  sudo nano action.php 
+  449  sudo cat /var/log/apache2/error.log
+  450  sudo nano action.php 
+  451  sudo cat /var/log/apache2/error.log
+  452  sudo nano action.php 
+  453  sudo nano index.php 
+  454  cd ..
+  455  clear
+  456  exit
+  457  cd /var/www/html/laith/
+  458  sudo cat /var/log/apache2/error.log
+  459  nano index.php 
+  460  sudo nano index.php 
+  461  sudo nano action.php
+  462  sudo cat /var/log/apache2/error.log
+  463  sudo rm  /var/log/apache2/error.log
+  464  sudo cat /var/log/apache2/error.log
+  465  '
+  466  sudo cat /var/log/apache2/error.log
+  467  sudo nano action.php
+  468  sudo nano index.php 
+  469  sudo nano action.php
+  470  sudo cat /var/log/apache2/error.log
+  471  sudo cd t /var/log/apache2/
+  472  sudo cd /var/log/apache2/
+  473  sudo cat /var/log/apache2/error.log
+  474  sudo nano index.php 
+  475  cat dbconnect.php 
+  476  mysql -u ajay -p
+  477  history
+  478  cd /var/www/html/laith/
+  479  nano view-video.php 
+  480  mysql -u ajay -p
+  481  nano view-urls.php
+  482  nano index.php 
+  483  cd /var/www/html/laith/
+  484  cat dbconnect.php 
+  485  cd /var/www/html/lar
+  486  cd /var/www/html/laith/
+  487  ls -l
+  488  nano action.php
+  489  nano index.php 
+  490  nano view-video.php
+  491  cd /var/www/html/laith/
+  492  clear
+  493  ls -l
+  494  nano view-video.php
+  495  ls -l
+  496  cp view-video.phpy view-video.php
+  497  rm view-video.phpy 
+  498  clear
+  499  ls -l
+  500  nano index.php 
+  501  rm view-video.phpy 
+  502  nano view-video.php 
+  503  cd /var/www
+  504  ls -la
+  505  vim .git/config
+  506  exit
+  507  history
+  508  passwd ajay
+  509  w
+  510  exit
+  511  dir
+  512  ls
+  513  cd repos
+  514  ls
+  515  cd ajay
+  516  ls
+  517  dir
+  518  cd ..
+  519  cd mosa
+  520  ls
+  521  requirements.txt
+  522  cat requirements.txt
+  523  cd ..
+  524  su -
+  525  sudo su
+  526  s
+  527  ls
+  528  cd work
+  529  ls
+  530  cd ..
+  531  dir
+  532  cd ajay
+  533  ls
+  534  jupyter notebook list
+  535  history
+  536  cd /var/www/html/laith/
+  537  nano action.php
+  538  cat dbconnect.php 
+  539  mysql -u ajay -p
+  540  nano action.php
+  541  service apache2 status
+  542  service apache2 restart
+  543  systemctl status apache2.service
+  544  systemctl restart apache2.service
+  545  sudo systemctl restart apache2.service
+  546  sudo service apache2 restart
+  547  sudo service httpd restart
+  548  sudo service httpd status
+  549  sudo systemctl status apache2
+  550  systemctl status httpd
+  551  systemctl restart httpd
+  552  sudo systemctl restart httpd
+  553  httpd
+  554  systemctl restart apache2
+  555  sudo systemctl restart apache2
+  556  /etc/init.d/memcached restart
+  557  sudo /etc/init.d/memcached restart
+  558  reboot
+  559  sudo reboot
+  560  sudo systemctl status  apache2
+  561  sudo nano /etc/apache2/apache2.conf
+  562  vim /etc/httpd/conf/httpd.conf
+  563  cd /etc/httpd/
+  564  tail -50 /var/log/apache2/error.log
+  565  sudo tail -50 /var/log/apache2/error.log
+  566  sudo tail -f /var/log/apache2/error.log
+  567  sudo tail -f /var/log/syste
+  568  sudo tail -f /var/log/php*.log
+  569  sudo ufw allow 80/tcp
+  570  sudo systemctl restart apache2
+  571  sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+  572  sudo systemctl restart apache2
+  573  sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+  574  sudo ufw status verbose
+  575  sudo ufw allow http
+  576  sudo systemctl restart apache2
+  577  sudo ufw allow 80/tcp
+  578  iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+  579  sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+  580  sudo systemctl restart apache2
+  581  sudo systemctl status apache2
+  582  sudo systemctl stop apache2
+  583  sudo systemctl start apache2
+  584  netstat -ntl | grep 80
+  585  service memcached restart
+  586  sudo service memcached restart
+  587  sudo service apache2 restart
+  588  sudo systemctl restart apache2
+  589  sudo systemctl status apache2
+  590  sudo systemctl stop apache2
+  591  sudo killall apache2
+  592  sudo systemctl status apache2
+  593  sudo apache2ctl -t
+  594  sudo systemctl restart apache2
+  595  sudo systemctl status apache2
+  596  sudo apache2ctl -t
+  597  sudo apache2ctl -S
+  598  cat "/var/log/apache2/error.log"
+  599  sudo cat "/var/log/apache2/error.log"
+  600  caat /etc/hosts
+  601  cat /etc/hosts
+  602  sudo nano /etc/apache2/sites-enabled/000-default.conf
+  603  sudo systemctl reload apache2
+  604  exit
+  605  sudo systemctl reload apache2
+  606  ls -l
+  607  cd repos/
+  608  ls -l
+  609  pef
+  610  ppwd
+  611  pwd
+  612  cp /var/www/html/laith/ /home/ajay/repos/laith
+  613  cp -r /var/www/html/laith/ /home/ajay/repos/laith
+  614  sudo cp -r /var/www/html/laith/ /home/ajay/repos/laith
+  615  clear
+  616  ls =l-
+  617  ls -l
+  618  sudo apt-get --purge remove apache2
+  619  sudo apt-get autoremove
+  620  sudo apt-get install apache2
+  621  sudo /etc/init.d/apache2 restart
+  622  lynx "http://localhost"
+  623  sudo /etc/init.d/apache2 restart
+  624  sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+  625  sudo firewall-cmd --reload
+  626  cd /var/www/html/laith/
+  627  clear
+  628  cat dbconnect.php 
+  629  mysql -u ajay -p
+  630  php -v 
+  631  sudo cat var/log/apache2/error.log
+  632  sudo cat var/log/apache2/error.logsudo apt-get install php libapache2-mod-php
+  633  sudo apt-get install php libapache2-mod-php
+  634  sudo service apache2 restart
+  635  sudo cat var/log/apache2/error.log
+  636  sudo cd var/log/
+  637  sudo cat /var/log/apache2/error.log
+  638  sudo tail -f  /var/log/apache2/error.log
+  639  sudo apt-get install php7.4-mysql
+  640  sudo tail -f  /var/log/apache2/error.log
+  641  php -i|grep PDO
+  642  sudo apt-get install php-mysql
+  643  sudo /etc/init.d/apache2 restart
+  644  sudo service apache2 restart
+  645  sudo tail -f  /var/log/apache2/error.log
+  646  nano action.php
+  647  vim action.php
+  648  sudo apt-get install php-curl
+  649  sudo service apache2 restart
+  650  clear
+  651  sudo tail -f  /var/log/apache2/error.log
+  652  cat action.php
+  653  nano action.php
+  654  cat .db
+  655  cat dbconnect.php 
+  656  sudo apt-get install php-mysql
+  657  12345678
+  658  mysql -u ajay -p
+  659  clear
+  660  cat view-video.php 
+  661  nano view-video.php 
+  662  sudo tail -f  /var/log/apache2/error.log
+  663  nano view-video.php 
+  664  mysql -u ajay -p
+  665  history
+  666  :q
+  667  exit
+  668  cat history >> laith-utube.txt
+  669  history >> laith-utubue.txt
